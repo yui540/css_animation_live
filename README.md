@@ -7,6 +7,6 @@
 
 - part1
   - 動画
-    - [https://www.youtube.com/watch?v=wFJ8WB4G4KM](https://www.youtube.com/watch?v=wFJ8WB4G4KM)
+    - <https://www.youtube.com/watch?v=wFJ8WB4G4KM>
   - ソースコード
-    - [https://www.youtube.com/watch?v=wFJ8WB4G4KM](https://github.com/yui540/css_animation_live/tree/master/part1)
+    - <https://github.com/yui540/css_animation_live/tree/master/part1>
