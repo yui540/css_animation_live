@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#stage {
+  position: relative;
+  width: 100%; height: 100vh;
+}
+
+/*** 共通 ***/
+.motion-type-1,
+.motion-type-1 div,
+.motion-type-2,
+.motion-type-2 div,
+.motion-type-3,
+.motion-type-3 div {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+/*** motion-type-1 ***/
+.motion-type-1 div { transform: scale(0); }
+.motion-type-1 div:nth-child(1) { background-color: #E7BABB; }
+.motion-type-1 div:nth-child(2) { background-color: #ACCCE5; }
+.motion-type-1 div:nth-child(3) { background-color: #F4DFA3; }
+
+/*** motion-type-2 ***/
+.motion-type-2 div { transform-origin: right top; transform: rotate(90deg); }
+.motion-type-2 div:nth-child(1) { background-color: #B4A2C9; }
+.motion-type-2 div:nth-child(2) { background-color: #E7BABB; }
+.motion-type-2 div:nth-child(3) { background-color: #B0D9D2; }
+
+/*** motion-type-3 ***/
+.motion-type-3 div { transform: scale(0); }
+.motion-type-3 div:nth-child(2n - 1) {
+  transform-origin: bottom right; transform: translateY(-100%) rotate(30deg);
+}
+.motion-type-3 div:nth-child(2n) {
+  transform-origin: bottom left; transform: translateY(-100%) rotate(-30deg);
+}
+.motion-type-3 div:nth-child(1) { background-color: #F4DFA3; }
+.motion-type-3 div:nth-child(2) { background-color: #E7BABB; }
+.motion-type-3 div:nth-child(3) { background-color: #ACCCE5; }
+
+
+/*******************************************************************************************
+ * animation
+ *******************************************************************************************/
+.motion-type-1 div:nth-child(1) { animation: scale 0.8s ease 0.5s forwards; }
+.motion-type-1 div:nth-child(2) { animation: scale 0.8s ease 0.6s forwards; }
+.motion-type-1 div:nth-child(3) { animation: scale 0.8s ease 0.7s forwards; }
+
+.motion-type-2 div:nth-child(1) { animation: rotate 0.5s ease 1.5s forwards; }
+.motion-type-2 div:nth-child(2) { animation: rotate 0.5s ease 1.7s forwards; }
+.motion-type-2 div:nth-child(3) { animation: rotate 0.5s ease 1.9s forwards; }
+
+.motion-type-3 div:nth-child(1) { animation: fall-1 0.6s ease 2.4s forwards; }
+.motion-type-3 div:nth-child(2) { animation: fall-2 0.6s ease 2.6s forwards; }
+.motion-type-3 div:nth-child(3) { animation: fall-1 0.6s ease 2.8s forwards; }
+
+
+/*******************************************************************************************
+ * keyframes
+ *******************************************************************************************/
+@keyframes scale {
+  from { transform: scale(0); }
+  to   { transform: scale(1); }
+}
+@keyframes rotate {
+  from { transform: rotate(90deg); }
+  to   { transform: rotate(0deg); }
+}
+@keyframes fall-1 {
+  from { transform: translateY(-100%) rotate(30deg); }
+  to   { transform: translateY(0%) rotate(0deg); }
+}
+@keyframes fall-2 {
+  from { transform: translateY(-100%) rotate(-30deg); }
+  to   { transform: translateY(0%) rotate(0deg); }
+}
