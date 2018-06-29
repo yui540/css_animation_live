@@ -10,3 +10,7 @@
     - <https://www.youtube.com/watch?v=wFJ8WB4G4KM>
   - ソースコード
     - <https://github.com/yui540/css_animation_live/tree/master/part1>
+- part2
+  - 動画
+  - ソースコード
+    - <https://github.com/yui540/css_animation_live/tree/master/part2>
