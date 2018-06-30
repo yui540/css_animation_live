@@ -12,5 +12,6 @@
     - <https://github.com/yui540/css_animation_live/tree/master/part1>
 - part2
   - 動画
+    - <https://www.youtube.com/watch?v=D9FgXH6HX6g>
   - ソースコード
     - <https://github.com/yui540/css_animation_live/tree/master/part2>
